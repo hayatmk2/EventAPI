@@ -21,20 +21,14 @@ namespace EventCatalogAPI.Domain
         public string Created { get; set; }
         public string Address { get; set; }
 
-
-
         // Creating Foreign key
         public int EventCategoryId { get; set; }
         public int EventSubCatagoryId{ get; set; }
        // public int EventLocationId { get; set; }
 
-
         public virtual Catagory Catagory { get; set; }  
         public virtual SubCatagory SubCatagory { get; set; }
        // public virtual Location Location { get; set; }
-
-
-
 
     }
 }
